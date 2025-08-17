@@ -6,7 +6,7 @@ import { siDiscord, siGithub } from "simple-icons";
 export default function Home() {
   return (
     <main className="min-h-screen bg-background antialiased">
-      <div className="px-[85px] pt-[85px]">
+      <div className="px-[64px] pt-[85px]">
         <div>
           <h1>hi, i'm yusof.</h1>
           <h1>
@@ -21,7 +21,7 @@ export default function Home() {
           <span className="flex items-center gap-1">
             hit me up at{" "}
             <Social
-              href="https://discord.com/users/"
+              href="https://discord.com/users/1257722365090205700"
               name="9dkc"
               icon={siDiscord}
             />
@@ -35,7 +35,7 @@ export default function Home() {
           </span>
         </div>
       </div>
-      <div className="px-[85px] pt-[55px] flex flex-col gap-4">
+      <div className="px-[64px] pt-[55px] flex flex-col gap-4">
         <h1>Projects</h1>
         <div className="grid grid-cols-2 grid-rows-3 gap-3">
           <Project
