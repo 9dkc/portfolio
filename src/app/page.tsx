@@ -6,19 +6,21 @@ import { siDiscord, siGithub } from "simple-icons";
 export default function Home() {
   return (
     <main className="min-h-screen bg-background antialiased">
-      <div className="px-[64px] pt-[85px]">
-        <div>
-          <h1>hi, i'm yusof.</h1>
-          <h1>
+      <div className="px-6 sm:px-12 lg:px-16 pt-16">
+        <div className="space-y-2">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
+            hi, i'm yusof.
+          </h1>
+          <h1 className="text-xl sm:text-2xl lg:text-3xl">
             i do{" "}
             <span className="text-accent font-sans font-bold">
-              {" "}
               software development
             </span>
           </h1>
         </div>
-        <div>
-          <span className="flex items-center gap-1">
+
+        <div className="mt-4">
+          <span className="flex flex-wrap items-center gap-2 text-sm sm:text-base">
             hit me up at{" "}
             <Social
               href="https://discord.com/users/1257722365090205700"
@@ -35,9 +37,10 @@ export default function Home() {
           </span>
         </div>
       </div>
-      <div className="px-[64px] pt-[55px] flex flex-col gap-4">
-        <h1>Projects</h1>
-        <div className="grid grid-cols-2 grid-rows-3 gap-3">
+
+      <div className="px-6 sm:px-12 lg:px-16 pt-12 flex flex-col gap-4">
+        <h1 className="text-2xl sm:text-3xl font-semibold">Projects</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <Project
             icon="/icons/aviation.png"
             name="aviation"
@@ -49,7 +52,7 @@ export default function Home() {
             name="portfolio"
             description="my portfolio/resume"
             href="https://github.com/9dkc/portfolio"
-          ></Project>
+          />
         </div>
       </div>
     </main>
